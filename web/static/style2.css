@@ -1,0 +1,43 @@
+body{
+
+    background-image: url('proi.jpg');
+    background-size: cover;
+}
+img{
+    width: 2.5%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+
+    
+}
+
+img:hover {
+  filter: brightness(1%) hue-rotate(2deg);
+}
+.login{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.35);
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    margin-left: 1100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+
+}
+.texx h2{
+    color: chocolate;
+}
+.login input {
+    margin: 50px 0;
+    width: 200px;
+    height: 30px;
+}

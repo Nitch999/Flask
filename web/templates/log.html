@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+<body>
+    {% include 'navbar.html' %}
+    <div>
+        <a href="home.html">
+        
+            <img src="re.png" alt="connexion">
+        </a>
+    </div>
+    
+                
+    <div class="register">
+            <div class="form-box">
+                <h2 class="texte">LOGIN TOU YOUR ACCOUNT</h2>
+                <form method="POST">
+                    <div class="input-fromm">
+                        <input 
+                            type="email" 
+                            placeholder="Email" 
+                            class="input-reg" 
+                            id="email"
+                            name="email"
+                        />
+                        <br>
+                        <input
+                            type="password"
+                            class="input-reg" 
+                            placeholder="Password"
+                            id="password"
+                            name="password"
+                        />
+                        
+                        <br>
+                        <div class="reg-btn">
+                            <button type="submit">LOGIN</button>
+                    
+                                    <div class="bobo">
+                                        <a id="sing" href="/sign" class="nwcmpt">Pas encore de compte ?</a>
+                                    </div>
+                                    
+                        
+                        </div>
+                    
+                    </div>
+                </form>
+                
+            </div>
+    </div>
+        
+</body>
+

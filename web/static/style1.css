@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: url('pric.jpg');
+    background-size: cover;
+}
+img{
+    width: 2.5%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+
+    
+}
+
+img:hover {
+  filter: brightness(1%) hue-rotate(2deg);
+}
+.register{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.form-box{
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #00000080;
+    padding: 50px 60px 70px;
+    border-radius: 17px;
+    text-align: center;
+}
+.form-box h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: aliceblue;
+    position: relative;
+    font-family: monospace;
+}
+.input-reg{
+    background: #fffefe;
+    margin: 2.5px 0;
+    border-radius: 5;
+    display: flex;
+    align-items: center;
+    
+
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    border-radius: 10px;
+
+}
+.reg-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.reg-btn button{
+    flex-basis: 48%;
+    background: #18fa03;
+    color: black;
+    height: 40px;
+    border-radius: 20px;
+}
+.bobo{
+    font-size: 16px;
+    color: rgb(27, 249, 2)55, 255, 255);
+}

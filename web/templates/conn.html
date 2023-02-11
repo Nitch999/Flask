@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <div>
+        <a href="home.html">
+        
+            <img src="re.png" alt="connexion">
+        </a>
+    </div>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="register">
+        <div class="form-box">
+            <h2 class="texte">Register your account</h2>
+            <form method="POST">
+                <div class="input-fromm">
+                    <input 
+                    id="nom"
+                    name="nom"
+                    type="text" 
+                    class="input-reg" 
+                    placeholder="Nom">
+                    <br>
+                    <input 
+                    type="text" 
+                    id="prenom"
+                    name="prenom"
+                    class="input-reg" 
+                    placeholder="Prenom">
+                    <br>
+                    <input 
+                    id="email"
+                    type="email" 
+                    placeholder="Email" 
+                    name="email"
+                    class="input-reg" >
+                    <br>
+                    <input 
+                    id="password1"
+                    name="password1"
+                    type="password" 
+                    class="input-reg" 
+                    placeholder="Password">
+                    <br>
+                    <input 
+                    id="password2"
+                    name="password2"
+                    type="password" 
+                    class="input-reg" 
+                    placeholder="confirmer mot de Pass">
+                    <br>
+                    <div class="reg-btn">
+                        <button type="submit" class="btn btn-primary">REGISTER</button>
+                    
+                    </div>
+                
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
